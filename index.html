@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+<body>
+    <header>
+        <img src="/img/SECURE.png" alt="logotipo" class="logo">
+    </header>
+    <main class="presentacion">
+        <section class="presentacion-contenido">
+            <input  class="decifrar" id="decifrar" placeholder="Ingrese el texto aqui" oninput="verificar()">
+            <div class="presentacion__enlaces">
+            <p class="recomendacion">
+                <img src="./img/logo-advertencia.png" class="advertencia">
+                este encriptador no funciona con letras mayusculas
+                o con acento (tildes)
+            </p>    
+        
+            
+                <button class="presentacion__enlaces__link" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="presentacion__enlaces__link" id="desencriptar" onclick="desencriptar()" disabled="true">Desencriptar</button>
+
+            </div>
+               
+        </section >
+        <div class="respuesta">
+         <div class="contenido-salida">
+            <div class="salida">
+                <img src="/img/Muñeco.png" class="muñeco">
+                <h1>Ningún mensaje fue encontrado</h1>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>     
+        </div>
+        <button class='presentacion__enlaces__link' id="copiar" style="visibility:hidden" onclick="copiar()">copiar</button>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
