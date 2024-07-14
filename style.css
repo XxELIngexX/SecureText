@@ -20,47 +20,72 @@ body{
 
 .presentacion {
     padding: 0% 10% 0% 10%;
-    margin-top: 0%;
     display: flex;
     justify-content: space-between;
+    gap:5%;
+    width: 100%;
+    box-sizing: border-box;
+    height: 80vh;
+    
 }
 
-.presentacion__contenido{
+.presentacion-contenido{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5%;
 }
 
 .decifrar{
-    margin-top: 10%;
-    width: 36rem; 
-    height: 3rem; 
+    width: 100%;  
     background-color:  rgba(225, 216, 255, 0.922);
-    font-size: 32px; 
+    font-size: 2rem; 
+    overflow-y:auto;
+    resize: vertical;
+    height: 100%;
+    
 }
+
 
 .presentacion__enlaces{
-    margin-top:38%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+    
 
 }
-
+.botones{
+    display: flex;
+    justify-content:center ;
+    gap: 2%;
+}
 .presentacion__enlaces__link{
     background-color: rgb(228, 196, 242);
-    width: 280px;
+    width: 90%;
     text-align: center;
     border-radius: 1rem;
     font-size: 2rem;
     font-weight: 600;
-    padding: 21.5px 0;
+    padding: 2%;
     text-decoration: none;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
 }
 
+.respuesta{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 17%; 
+    align-items:center ;
+    justify-content: flex-end;
+    
+}
+
 .contenido-salida{
     width: 100%; 
-    height: 300%; 
-    border: 2px solid black; 
+    height: 70%;  
+    border: 2px outset rgb(255, 255, 255); 
     border-radius: 15px;
 }
 .salida{
@@ -73,13 +98,13 @@ body{
 .muñeco{
     max-width: 90%;
     height: auto;
-    padding: 30% 0% 10% 0%;
+    padding: 20% 0% 10% 0%;
     
 }
-.copiar{
-    
-    
+#copiar{
+    height: 10%;
 }
+
 
 ::placeholder{
     color: rgb(119, 95, 130);
@@ -101,8 +126,147 @@ body{
     background-color: rgb(173, 173, 173);
 }
 
-.respuesta{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.copiar:hover{
+    background-color: rgb(182, 137, 201);
+
+}
+
+
+@media (min-width:768px) AND (max-width:1200px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        height: 80vh;
+        
+    }
+     .presentacion-contenido{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items:center ;
+        justify-content: center;
+        height: 80vh;
+    }
+    
+    .decifrar{
+        width: 100%;
+        background-color:  rgba(225, 216, 255, 0.922);
+        font-size: 2rem; 
+        overflow-y:auto;
+        resize: vertical;
+        height: 100%;
+    }
+     .recomendacion{        
+        text-align: center;
+        font-size: 2rem;
+    }
+    .muñeco{
+        display: none;
+    }
+    .respuesta{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        gap: 5%;
+        justify-content: flex-start;
+    }
+    .botones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .presentacion__enlaces__link{
+        width: 30%;
+        align-items:center ;
+        justify-content: center;
+        
+    }
+    .presentacion__enlaces__link:hover{
+        background-color: rgb(182, 137, 201);
+    }
+    
+    .presentacion__enlaces__link:disabled{
+        background-color: rgb(173, 173, 173);
+    }  
+    #copiar{
+        height: 30%;
+    }
+
+}
+@media (max-width: 767px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    .presentacion{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box;
+        height: 70vh;
+        
+    }
+     .presentacion-contenido{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items:center ;
+        justify-content: center;
+        height: 50vh;
+    }
+    
+    .decifrar{
+        width: 100%;
+        background-color:  rgba(225, 216, 255, 0.922);
+        font-size: 1rem; 
+        overflow-y:auto;
+        resize: vertical;
+        height: 100%;
+    }
+     .recomendacion{        
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .muñeco{
+        display: none;
+    }
+    .respuesta{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        gap: 5%;
+        justify-content: flex-start;
+    }
+    .botones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .presentacion__enlaces__link{
+        width: 30%;
+        align-items:center ;
+        justify-content: center;
+        font-size: 1rem;
+        
+    }
+    .presentacion__enlaces__link:hover{
+        background-color: rgb(182, 137, 201);
+    }
+    
+    .presentacion__enlaces__link:disabled{
+        background-color: rgb(173, 173, 173);
+    }  
+    #copiar{
+        height: 16%;
+    }
 }

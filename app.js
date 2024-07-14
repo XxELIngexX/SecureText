@@ -37,7 +37,6 @@ function encriptar(){
     respuesta.textContent=cadena;
     respuesta.id = "textoResuelto"
     
-    contenidoSalida.style.padding = '10%';
     contenidoSalida.style.fontSize = '1.5rem';
     contenidoSalida.appendChild(respuesta);    
 }
@@ -68,9 +67,6 @@ function changeContenedor(){
   
     // Agregar botón fuera del contenedor
     boton.setAttribute('style', 'visibility: visible');
-
-    // modifica el contenudo-salida
-    contenidoSalida.style.width='100%'
 
     if(document.querySelector('#textoResuelto')){
         document.querySelector('#textoResuelto').remove()
