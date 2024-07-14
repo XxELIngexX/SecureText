@@ -29,6 +29,8 @@ Esta aplicación web permite encriptar y desencriptar textos utilizando un conju
 2. Selecciona la opción de encriptar o desencriptar.
 3. Presiona el botón correspondiente para ver el resultado.
 4. Utiliza el botón de copiar para transferir el resultado al portapapeles.
+
+   
 **la opcion de Desencriptar, solo estara habilitada si el Desencriptador identifica una de las cadenas posibles**
 
 ## Tecnologías Utilizadas
